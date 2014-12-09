@@ -6,7 +6,9 @@
 class Firewalker {
   
  public:
-  Firewalker(int, int, int);
+  Firewalker(int _STEP_PIN = A9,
+	     int _N_LEDS = 10,
+	     int _STEP_OFF_TRIGGER = 400);
   void begin();
   void readStepValue();
   int getStepValue();
