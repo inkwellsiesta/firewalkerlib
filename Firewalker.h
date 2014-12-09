@@ -1,6 +1,6 @@
 class Firewalker {
- private:
-  int N_LEDS, SHOE_LEN_LEDS, SHOE_LED_BACK,
+ public:
+  const int N_LEDS, SHOE_LEN_LEDS, SHOE_LED_BACK,
     STEP_PIN, LED_PIN, MAXSTEPS;
 
 
@@ -8,4 +8,5 @@ class Firewalker {
   Firewalker();
   Firewalker(int, int, int,
 	     int, int, int);
+  const int getMaxSteps();
 };

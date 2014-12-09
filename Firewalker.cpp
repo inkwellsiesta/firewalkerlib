@@ -14,3 +14,7 @@ Firewalker::Firewalker(int _N_LEDS = 8, // TOTAL number of LEDs in strip
   N_LEDS(_N_LEDS), SHOE_LEN_LEDS(_SHOE_LEN_LEDS),
     SHOE_LED_BACK(_SHOE_LED_BACK), STEP_PIN(_STEP_PIN),
     LED_PIN(_LED_PIN), MAXSTEPS(_MAXSTEPS) {}
+
+Firewalker::getMaxSteps() {
+  return MAXSTEPS;
+}
