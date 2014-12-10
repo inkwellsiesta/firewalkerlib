@@ -22,8 +22,10 @@ uint8_t gamma[] PROGMEM = { // Gamma correction table for LED brightness
 Firewalker::Firewalker(int _STEP_PIN /* = A9 */,
 		       int _N_LEDS /* = 10 */,
 		       int _STEP_OFF_TRIGGER /* = 400 */) :
-  N_LEDS(_N_LEDS), STEP_PIN(_STEP_PIN),
-  STEP_OFF_TRIGGER(_STEP_OFF_TRIGGER), stepNum(0) {}
+  STEP_PIN(_STEP_PIN),
+  STEP_OFF_TRIGGER(_STEP_OFF_TRIGGER), stepNum(0) {
+  N_LEDS = _N_LEDS > MAX_N_LEDS ? MAX_N_LEDS : _N_LEDS;
+}
 
 /*
  * Initialization, meant to be called in setup()

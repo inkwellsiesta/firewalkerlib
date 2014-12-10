@@ -26,7 +26,7 @@ private:
 
   static const int MAXSTEPS = 3;
   static const int MAX_N_LEDS = 15;
-  const int N_LEDS;
+  int N_LEDS;
   int STEP_PIN;
   int STEP_OFF_TRIGGER;
   int stepMag[MAXSTEPS], stepX[MAXSTEPS];
